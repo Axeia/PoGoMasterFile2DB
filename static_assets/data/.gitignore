@@ -1,0 +1,9 @@
+#Ignore all files & subfolders but not itself. 
+#This means the folder won't be be empty and thus will be included in GIT - neat!
+
+#Ignore all files in this folder
+*
+#Ignore all subfolders of this folder
+*/
+#Don't ignore itself
+!.gitignore

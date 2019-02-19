@@ -13,7 +13,9 @@ As a picture says a thousand words, after installing it this should show up in y
 ## How to install
 1) Just unzip in the root of a host folder of your server that runs PHP7+ 
 2) Ensure static/assets/data has write permissions
-3) Visit the URL of your host
+3) Visit the URL of your host (first page load might take a while as it will download the gamemaster.json and list of image files*)
+
+*Just the listing of the files, not the actual image files.
 
 ## WebKit browsers are super slow loading index.php
 
@@ -38,21 +40,21 @@ The workflow of this project is more along the lines of
 2. Extract data from the JSON in PHP
 3. Output SQL or Laravel files
 
-#Credits
+# Credits
 [ZeChrales](https://github.com/ZeChrales/PogoAssets/tree/master/gamemaster) for providing the gamemaster.json 
 The rest is my own data so far, contributions are welcomed.
 [Ace](https://github.com/ajaxorg/ace-builds) editor for providing Syntax highlighting
 
-#Optimizations
+# Optimizations
 If you're looking to contribute. I could use help with figuring out why the page is so slow to load.
 My theory is that something is overloading the main thread. 
 I thought it might be the spellcheck but even with spellcheck="false" on the textareas it's still slow.
 So the remaining theory now is that Javascript is being processed rather poorly, it could be the Ace Editor or it could be my own Javascript code.
 
-#To-do list
+# To-do list
 * Split different outputs away from GameMasterFileParser it should just fill the array. Outputting SQL or Laravel code should be the task of dedicated classes (<abbr title="Keep it simple, stupid">KISS</abbr>)
 * Finalize table creation code (and remove unneeded sql_templates)
 * Show messages in index
 
-#Alpha
+# Alpha
 *-Warning-* This software is very much a work in progress in alpha state. Things will change in breaking ways.
