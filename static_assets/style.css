@@ -1,0 +1,190 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: 
+    linear-gradient(315deg, #202020 0%, #262626 74%);
+    color: rgb(172, 172, 172);
+    background-attachment: fixed;
+    font-family: "Gill Sans", sans-serif;
+}
+
+button
+{
+    background-color: rgba(113, 169, 116, 0.2);
+    color: #fff;
+    border: rgba(117, 146, 195, 0.2) 1px solid;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+textarea{
+    min-width: 100%;
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.ace_editor{
+    min-height: calc(100vh - 2rem - 1px);
+}
+#left-pane, #right-pane{
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+}
+body .ace_scrollbar-h {
+    overflow-x: auto;
+}
+#left-pane{
+    width: calc(550px);
+    resize: horizontal;
+    overflow: auto;
+    resize: horizontal;
+}
+#right-pane{
+    width: calc(100% - 550px);
+}
+
+.messages{
+    list-style: none;
+}
+.messages li{
+    display: block;
+    color: #ddd;
+}
+
+body{
+    display: flex;
+}
+#sidebar{
+    width: 300px;
+    height: 100%;
+    color: #fff;
+}
+#main{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+}
+pre{
+    margin: 0;
+}
+
+.tab-bar{
+    height: 2rem;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #2d2d2d;
+    border-bottom: 1px solid #121212;
+}
+
+.tab-bar li{
+    display: inline-block;
+    background: #1e1e1e;
+    border-right: 1px solid #252526;
+    line-height: 2rem;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: Consolas,monaco,monospace; 
+}
+
+#template-types{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#template-types li{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.tab-bar>.filter-tab{
+    float: right;
+    background: #333;
+    border: 0;
+    color: #fff;
+    background: transparent;
+}
+select{
+    background: #333;
+    color: #aaa;
+    border: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    margin: 2.4rem 0 6rem -0.4rem;
+    padding: 0;
+    transform: rotate(-27deg);
+    font-size: 1.6rem;
+    text-shadow: 0 0 10px #fff, 0 0 0.1rem #fff, 0 0 0.2rem #00ff15;
+}
+h1, h2 {
+    color: #fff;
+}
+h2{
+    padding: 0.5rem 0.25rem 0;
+    text-shadow: 0 0 10px #fff, 0 0 0.1rem #000;
+    clear: both;
+}
+#update-header{
+    float: left;
+}
+#update-button{
+    float: right;
+    margin: 1.65rem 0.5rem
+}
+  
+#h1-base{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 300px 150px 0;
+    border-color: rgba(113, 169, 116, 0.2) transparent transparent transparent;
+    position: absolute;
+    pointer-events: none;
+}
+
+fieldset{
+    border: 2px solid rgba(117, 146, 195, 0.5);
+    margin: 0.5rem;
+    background: rgba(0,0,0,.2);
+}
+
+fieldset label+label{
+    float: right;
+}
+legend{
+    font-weight: bold;
+}
+
+#filter{
+    background: transparent;
+    float: right;
+}
+
+.gamemaster-label{
+    margin: 0.5rem;
+    background: rgba(0,0,0,.2);
+    padding: 0.5rem;
+    border: 2px solid;
+    display: block;
+    border: 2px solid rgba(117, 146, 195, 0.5);
+}
+
+#download-form button+button{
+    float: right;
+}
